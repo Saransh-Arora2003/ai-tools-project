@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Suite | NLP + Text Generation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Tools Suite</h1>
+            <p>Advanced Natural Language Processing & AI-Powered Intelligence Platform</p>
+        </header>
+
+        <div class="main-content">
+            <section class="input-section">
+                <h2>💭 Sentiment Analysis Tool</h2>
+                <p class="section-description">Analyze emotional tone and sentiment in your text using advanced NLP algorithms</p>
+                <textarea id="textInput" placeholder="Enter text to analyze sentiment...">I absolutely love this product! It has completely changed how I work and made everything so much easier. The customer service was exceptional too!</textarea>
+                <div class="button-group">
+                    <button id="analyzeBtn" class="btn btn-primary">Analyze Sentiment</button>
+                    <button id="clearBtn" class="btn btn-secondary">Clear</button>
+                </div>
+                
+                <div class="example-texts">
+                    <h3>📝 Sample Texts:</h3>
+                    <div class="example-buttons">
+                        <button class="example-btn" data-text="I love this product! It's amazing and works perfectly.">Positive</button>
+                        <button class="example-btn" data-text="This is the worst service I've ever experienced. Absolutely terrible.">Negative</button>
+                        <button class="example-btn" data-text="The product arrived on time and works as expected.">Neutral</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="output-section">
+                <h2>📊 Sentiment Results</h2>
+                <div class="result-container">
+                    <div id="sentimentResult" class="sentiment-display neutral">
+                        <div class="sentiment-icon">😐</div>
+                        <div class="sentiment-text">Ready for analysis</div>
+                    </div>
+                    
+                    <div class="confidence-meter">
+                        <div class="confidence-label">
+                            <span>Confidence Level:</span>
+                            <span id="confidenceValue">0%</span>
+                        </div>
+                        <div class="confidence-bar">
+                            <div id="confidenceFill" class="confidence-fill"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="detailedResults" class="detailed-results">
+                        <p>Enter text and click "Analyze Sentiment" to see detailed results.</p>
+                    </div>
+                    
+                    <div class="analysis-details" id="analysisDetails">
+                        <!-- Dynamic content will be inserted here -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="input-section">
+                <h2>✍️ Text Generation with DistilGPT</h2>
+                <p class="section-description">Generate intelligent text continuations using the DistilGPT-2 language model</p>
+                <textarea id="promptInput" placeholder="Enter a prompt to generate text...">Once upon a time in the world of AI</textarea>
+                <div class="button-group">
+                    <button id="generateBtn" class="btn btn-primary">Generate</button>
+                    <button id="clearPromptBtn" class="btn btn-secondary">Clear</button>
+                </div>
+                
+                <div class="example-texts">
+                    <h3>🚀 Example Prompts:</h3>
+                    <div class="example-buttons">
+                        <button class="example-btn-gpt" data-text="The future of artificial intelligence">AI Future</button>
+                        <button class="example-btn-gpt" data-text="Machine learning algorithms are">ML Algorithms</button>
+                        <button class="example-btn-gpt" data-text="Natural language processing enables">NLP Capabilities</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="output-section">
+                <h2>📝 Generated Content</h2>
+                <div class="result-container">
+                    <div id="generatedResult" class="sentiment-display neutral" style="flex-direction: column; align-items: flex-start;">
+                        <div class="sentiment-icon" style="align-self: center; margin-bottom: 10px;">✍️</div>
+                        <div class="sentiment-text" style="width: 100%; text-align: left;">Ready for generation</div>
+                    </div>
+                    
+                    <div id="generatedContent" class="detailed-results">
+                        <p>Enter a prompt and click "Generate Text" to see results.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tech-section">
+                <h2>⚙️ AI Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">🧠</div>
+                        <h3>Deep Learning</h3>
+                        <p>Advanced neural networks with LSTM/Transformer architectures for superior text understanding and pattern recognition.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">📚</div>
+                        <h3>Natural Language Processing</h3>
+                        <p>State-of-the-art NLP techniques including tokenization, semantic analysis, and contextual understanding.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🎯</div>
+                        <h3>Word Embeddings</h3>
+                        <p>Cutting-edge embeddings technology (Word2Vec, GloVe, BERT) for semantic relationship extraction.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">⚡</div>
+                        <h3>Real-time Processing</h3>
+                        <p>Optimized inference engines for instant results with minimal latency and maximum accuracy.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🚀</div>
+                        <h3>DistilGPT-2</h3>
+                        <p>Lightweight yet powerful generative AI model for fast, efficient text generation and completion.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>AI Tools Suite &copy; 2026 | Powered by Flask, PyTorch, Transformers, and State-of-the-Art AI Models</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
